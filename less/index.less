@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+}
+
+.wh(@w:100%,@h:100%) {
+  width: @w;
+  height: @h;
+}
+.box{
+  max-width: 1920px;
+  height: 100%;
+  position: relative;
+}
+.header {
+  .wh(1740px, 60px);
+  //border: 1px red solid;
+  overflow: hidden;
+  .header_top {
+    .wh(980px, 60px);
+    margin:0 auto 0;
+    .logo {
+      .wh(68px, 18px);
+      background: url("../images/logo.jpg");
+      margin-top: 18px;
+      float: left;
+    }
+
+    .header_nav {
+      .wh(440px, 14px);
+      float: right;
+      margin-top: 22px;
+
+      .list {
+        float: left;
+        margin-left: 28px;
+        font-size: 14px;
+
+        &:hover {
+          color: #b4181b;
+          background: url("../images/下拉.png") no-repeat center right;
+          padding-right: 20px;
+        }
+      }
+
+      .active{
+        color: #b4181b;
+        background: url("../images/下拉.png") no-repeat center right;
+        padding-right: 20px;
+      }
+    }
+  }
+
+}
+
+//
+.content {
+  .wh(1740px, 1002px);
+  border: 1px red solid;
+  background: url("../images/bg1.jpg") center;
+  background-size: cover;
+  .left_con {
+    .wh(180px, 1002px);
+    background:url("../images/aside_bg.jpg") 180px 1002px repeat;
+    float: left;
+    .top_logo {
+      background: url("../images/game_top.jpg") no-repeat center;
+      .wh(180px, 130px);
+    }
+    .top_adise{
+      .wh(180px, 442px);
+      border-bottom: 1px #123a36 solid;
+      text-align: center;
+      div:first-child{
+        margin-top: 20px;
+      }
+      .ball{
+        .wh(75px,75px);
+        margin: 10px auto;
+        border:1px #123a36 solid ;
+        border-radius: 50%;
+        div{
+          background:#1a514d ;
+          .wh(60px,60px);
+          border-radius: 50%;
+         margin: 7px auto;
+          line-height: 55px;
+        }
+        .home{
+          background: #0da89b url("../images/home.png") no-repeat center;
+        }
+        .active {
+          background: #0da89b;
+        }
+      }
+    }
+    .top_weixin{
+      .wh(98px,140px);
+      margin: 25px auto;
+      .title{
+        overflow: hidden;
+        div:nth-child(1){
+          .wh(48px,25px);
+          background:#0f423f url("../images/刷新.png") no-repeat center;
+          float: left;
+        }
+        div:nth-child(2){
+          float: left;
+          .wh(48px,25px);
+          background:#262626 url("../images/微信logo.png") no-repeat center;
+        }
+      }
+      .weixinCode{
+        .wh(96px,120px);
+        background: url("../images/二维码.png") no-repeat;
+        position: relative;
+        a{
+          position:absolute;
+          bottom: 5px;
+          left: 25px;
+          color: #fff;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  .main_con{
+    .wh(1558px,1002px);
+    float: left;
+    .main_left{
+      .wh(@w: 330px);
+      border: 1px red solid;
+      .main_top{
+
+      }
+    }
+  }
+}

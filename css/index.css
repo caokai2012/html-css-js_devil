@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+}
+.box {
+  max-width: 1920px;
+  height: 100%;
+  position: relative;
+}
+.header {
+  width: 1740px;
+  height: 60px;
+  overflow: hidden;
+}
+.header .header_top {
+  width: 980px;
+  height: 60px;
+  margin: 0 auto 0;
+}
+.header .header_top .logo {
+  width: 68px;
+  height: 18px;
+  background: url("../images/logo.jpg");
+  margin-top: 18px;
+  float: left;
+}
+.header .header_top .header_nav {
+  width: 440px;
+  height: 14px;
+  float: right;
+  margin-top: 22px;
+}
+.header .header_top .header_nav .list {
+  float: left;
+  margin-left: 28px;
+  font-size: 14px;
+}
+.header .header_top .header_nav .list:hover {
+  color: #b4181b;
+  background: url("../images/下拉.png") no-repeat center right;
+  padding-right: 20px;
+}
+.header .header_top .header_nav .active {
+  color: #b4181b;
+  background: url("../images/下拉.png") no-repeat center right;
+  padding-right: 20px;
+}
+.content {
+  width: 1740px;
+  height: 1002px;
+  border: 1px red solid;
+  background: url("../images/bg1.jpg") center;
+  background-size: cover;
+}
+.content .left_con {
+  width: 180px;
+  height: 1002px;
+  background: url("../images/aside_bg.jpg") 180px 1002px repeat;
+  float: left;
+}
+.content .left_con .top_logo {
+  background: url("../images/game_top.jpg") no-repeat center;
+  width: 180px;
+  height: 130px;
+}
+.content .left_con .top_adise {
+  width: 180px;
+  height: 442px;
+  border-bottom: 1px #123a36 solid;
+  text-align: center;
+}
+.content .left_con .top_adise div:first-child {
+  margin-top: 20px;
+}
+.content .left_con .top_adise .ball {
+  width: 75px;
+  height: 75px;
+  margin: 10px auto;
+  border: 1px #123a36 solid ;
+  border-radius: 50%;
+}
+.content .left_con .top_adise .ball div {
+  background: #1a514d ;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: 7px auto;
+  line-height: 55px;
+}
+.content .left_con .top_adise .ball .home {
+  background: #0da89b url("../images/home.png") no-repeat center;
+}
+.content .left_con .top_adise .ball .active {
+  background: #0da89b;
+}
+.content .left_con .top_weixin {
+  width: 98px;
+  height: 140px;
+  margin: 25px auto;
+}
+.content .left_con .top_weixin .title {
+  overflow: hidden;
+}
+.content .left_con .top_weixin .title div:nth-child(1) {
+  width: 48px;
+  height: 25px;
+  background: #0f423f url("../images/刷新.png") no-repeat center;
+  float: left;
+}
+.content .left_con .top_weixin .title div:nth-child(2) {
+  float: left;
+  width: 48px;
+  height: 25px;
+  background: #262626 url("../images/微信logo.png") no-repeat center;
+}
+.content .left_con .top_weixin .weixinCode {
+  width: 96px;
+  height: 120px;
+  background: url("../images/二维码.png") no-repeat;
+  position: relative;
+}
+.content .left_con .top_weixin .weixinCode a {
+  position: absolute;
+  bottom: 5px;
+  left: 25px;
+  color: #fff;
+  font-size: 12px;
+}
+.content .main_con {
+  width: 1558px;
+  height: 1002px;
+  float: left;
+}
+.content .main_con .main_left {
+  width: 330px;
+  height: 100%;
+  border: 1px red solid;
+}
